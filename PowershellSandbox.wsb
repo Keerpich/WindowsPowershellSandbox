@@ -1,0 +1,12 @@
+<Configuration>
+  <MappedFolders>
+    <MappedFolder>
+      <HostFolder>E:\Sandbox\StartupScripts</HostFolder>
+      <SandboxFolder>C:\Users\WDAGUtilityAccount\Downloads\StartupScripts</SandboxFolder>
+      <ReadOnly>true</ReadOnly>
+    </MappedFolder>
+  </MappedFolders>
+  <LogonCommand>
+    <Command>powershell -executionpolicy unrestricted -command "start powershell {-noexit -file C:\Users\WDAGUtilityAccount\Downloads\StartupScripts\PowershellSetup.ps1}"</Command>
+  </LogonCommand>
+</Configuration>
