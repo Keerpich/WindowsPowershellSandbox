@@ -13,11 +13,8 @@ Add-AppxPackage Microsoft.UI.Xaml.2.8.x64.appx
 Add-AppxPackage Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle
 winget install "windows terminal" --source "msstore" --accept-source-agreements --accept-package-agreements
 winget install --id Microsoft.PowerShell --source winget
-winget install -e --id Microsoft.VisualStudioCode
+winget install Neovim.Neovim
 Refresh-Path
-code --install-extension ms-vscode.powershell
-code --install-extension redhat.vscode-xml
-code --install-extension vscodevim.vim
 &"C:\Program Files\PowerShell\7\pwsh.exe" -executionpolicy unrestricted -command "update-help -force"
 wt
 get-process *powershell* | stop-process
